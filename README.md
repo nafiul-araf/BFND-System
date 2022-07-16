@@ -27,12 +27,10 @@ Figure shows the methodology of the Hashing technique for ML algorithms in Bangl
 - The hash function that is used is known as Mumurhash3 which is a multiply and rotation hash. Here two multiplications and two rotations take place. It takes a reference to a byte stream, byte stream length and a random state or seed. The equation shows the mathematical formulas of Mumurhash3: Here: b is the block key, a is the hash states block and n1, n2, c1 are constant. In the `sklearn` module it is a default hash function in `Hashing Vectorizer`.
 
 ```
-
 b = b × n1
 b = rotation(b, n1)
 b = b × n2
 a = a ⊕ b
 a = rotation(a, n2)
 a = a × c1 + n1
-
 '''
