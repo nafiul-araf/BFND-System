@@ -33,4 +33,4 @@ b = b × n2
 a = a ⊕ b
 a = rotation(a, n2)
 a = a × c1 + n1
-'''
+```
