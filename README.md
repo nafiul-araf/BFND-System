@@ -53,7 +53,7 @@ The figure shows the methodology of the Hashing-Autoencoder technique only for M
 
 ![Autoencode](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Autoencoder.drawio.png)
 
-> @@ LSTM model architechture @@
+```- difff @@ LSTM model architechture @@```
 
 ![lstm](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/lstm.drawio.png)
 
