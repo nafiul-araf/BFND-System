@@ -19,7 +19,7 @@ The main contribution of this work is in the feature extraction part of the meth
 Figure shows the basic overview of the proposed system. Here we use both ML and DL models with feature extraction techniques commonly used TF-IDF technique and word embedding, rarely used `hashing trick` technique and also a `hashing-autoencoder model` for reconstructing the input vector for various ML models which are Logistic Regression, Passive Aggressive Classifier, Decision Tree algorithm and ensemble learning like Voting Classifiers, Boosting algorithms etc. In DL models, we have used both LSTM, GRU and also hybrid networks with CNN-LSTM, CNN-GRU. Among them the hashing trick for feature extraction is totally new for Bangla Fake News Detection, and hashing autoencoder for both feature extraction & input regeneration is totally new for fake news detection of any language corpus. These two types of proposed system have been outperformed over other traditional approaches with the performance of detecting fake news.
 
 ### Methodology 1.1 - Hashing Trick for Machine Leanring
-![Hashing for ML](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Hashing-ML-Methodo.drawio.png))
+![Hashing for ML](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Hashing-ML-Methodo.drawio.png)
 
 Figure shows the methodology of the Hashing technique for ML algorithms in Bangla fake news detection. 
 
@@ -34,3 +34,10 @@ a = a ⊕ b
 a = rotation(a, n2)
 a = a × c1 + n1
 ```
+
+### Methodology 1.1 - Hashing Trick for Machine Leanring
+![Hashing for DL](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Hashing-DL-Methodo.drawio.png)
+
+The Figure shows the methodology of the Hashing technique for DL algorithms in Bangla fake news detection.
+
+- In DL, MD5 hash function is used. It is a stable hash function. It turns data into a 32 digits hexadecimal numbers. To generate a hash, the MD5 hashing technique employs a complicated mathematical formula. It divides data into blocks of specific sizes and manipulates it many times. The algorithm adds a Methodology 24 unique value to the computation and turns the result into a small signature or hash while this is going on. In `keras` framework it is available in default as `hashing_trick`.
