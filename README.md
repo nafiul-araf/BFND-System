@@ -11,5 +11,5 @@ The main contribution of this thesis/project are:
 - Finding the best learning model for detecting the fake news from the Bangla news corpus using the proposed methods.
 
 ## Basic Framework Overview
-
+![Basic Framework](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Framework-Overview.drawio.png)
 Figure shows the basic overview of the proposed system. Here we use both ML and DL models with feature extraction techniques commonly used TF-IDF technique and word embedding, rarely used hashing trick technique and also a hashing-autoencoder model for reconstructing the input vector for various ML models which are Logistic Regression, Passive Aggressive Classifier, Decision Tree algorithm and ensemble learning like Voting Classifiers, Boosting algorithms etc. In DL models, we have used both LSTM, GRU and also hybrid networks with CNN-LSTM, CNN-GRU. Among them the hashing trick for feature extraction is totally new for Bangla Fake News Detection, and hashing autoencoder for both feature extraction & input regeneration is totally new for fake news detection of any language corpus. These two types of proposed system have been outperformed over other traditional approaches with the performance of detecting fake news.
