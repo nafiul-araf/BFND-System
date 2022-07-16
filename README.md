@@ -53,18 +53,18 @@ The figure shows the methodology of the Hashing-Autoencoder technique only for M
 
 ![Autoencode](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Autoencoder.drawio.png)
 
-```- difff @@ LSTM model architechture @@```
+- LSTM model architechture
 
 ![lstm](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/lstm.drawio.png)
 
-> @@ GRU model architechture @@
+- GRU model architechture
 
 ![gru](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/gru.drawio.png)
 
-> @@ CNN-LSTM model architechture @@
+- CNN-LSTM model architechture
 
 ![cnn_lstm](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/cnn_lstm.drawio.png)
 
-> @@ CNN-GRU model architechture @@
+- CNN-GRU model architechture
 
 ![cnn_gru](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/cnn_gru.drawio.png)
