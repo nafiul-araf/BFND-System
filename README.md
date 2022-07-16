@@ -35,7 +35,7 @@ a = rotation(a, n2)
 a = a × c1 + n1
 ```
 
-### Methodology 1.1 - Hashing Trick for Machine Leanring
+### Methodology 1.2 - Hashing Trick for Machine Leanring
 ![Hashing for DL](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Hashing-DL-Methodo.drawio.png)
 
 The Figure shows the methodology of the Hashing technique for DL algorithms in Bangla fake news detection.
