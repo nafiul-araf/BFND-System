@@ -52,3 +52,19 @@ The figure shows the methodology of the Hashing-Autoencoder technique only for M
 ```- We used two encoder blocks and two decoder blocks. All the blocks consist of a dense layer, a batch normalization layer and leaky relu activation function. The decoder block 1 & the encoder block 2 are same, and the decoder block 1 and the encoder block 1 are same as the decoder block regenerates the data. The latent layer is also called a bottleneck layer which consist of a dense layer. The Encoder 1 block has (2 x input) number of neurons & decoder block 2 has the same neurons. The Encoder 2 block has same number as input of neurons & decoder block 1 has the same neurons. The latent layer has (input/2) number of neurons. The below figure shows the graphical representation of the autoencoder that I have used.```
 
 ![Autoencode](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Autoencoder.drawio.png)
+
+> LSTM model architechture----
+
+![lstm](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/lstm.drawio.png)
+
+> GRU model architecture....
+
+![gru](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/gru.drawio.png)
+
+> CNN-LSTM model architecture....
+
+![cnn_lstm](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/cnn_lstm.drawio.png)
+
+> CNN-GRU model architecture....
+
+![cnn_gru](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/cnn_gru.drawio.png)
