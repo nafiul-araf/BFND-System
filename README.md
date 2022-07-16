@@ -41,3 +41,8 @@ a = a × c1 + n1
 The Figure shows the methodology of the Hashing technique for DL algorithms in Bangla fake news detection.
 
 - In DL, MD5 hash function is used. It is a stable hash function. It turns data into a 32 digits hexadecimal numbers. To generate a hash, the MD5 hashing technique employs a complicated mathematical formula. It divides data into blocks of specific sizes and manipulates it many times. The algorithm adds a Methodology 24 unique value to the computation and turns the result into a small signature or hash while this is going on. In `keras` framework it is available in default as `hashing_trick`.
+
+### Methodology 2 - Hashing-Autoencoder for Machine Leanring
+![Hash-Autoen for ML](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Hashing-Autoencoder-Methodo.drawio.png)
+
+The figure shows the methodology of the Hashing-Autoencoder technique only for ML algorithms in Bangla fake news detection.
