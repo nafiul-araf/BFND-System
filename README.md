@@ -7,7 +7,9 @@ The Spread of fake news is a global issue. In an age where the internet is commo
 ## Contribution
 The main contribution of this work is in the feature extraction part of the methodology. The main contribution of this thesis/project are:
 `- Using the hashing trick for the feature extraction from the text corpus. In general, TF-IDF, bag of words, word embedding, etc. techniques are being used widely for feature extraction. For both ML and DL algorithms hashing is used. For the large data set, it has improved the performance of the model significantly.`
+
 `- Using the hashing-autoencoder technique for ML algorithms. With the help of a hashing trick we used an autoencoder technique for regeneration of the input for reducing the sparsity of the input vectors. It has improved the model’s performance in a more balanced way than only using the hashing trick.`
+
 `- Finding the best learning model for detecting the fake news from the Bangla news corpus using the proposed methods.`
 
 ## Basic Framework Overview
