@@ -94,3 +94,54 @@ Performance comparison with the proposed system
 Performance comparison with the proposed system
 
 ![h_a_p_ml](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/hashing_autoencoder_performance.png)
+
+## Limitations ##
+As the words or features can not be regenerated in the hashing trick, it is not possible to identify the features of real or fake news. But the performance is much better than the TF-IDF or One Hot Encoding. Therefore, we must make an assumption. We noticed that the length and word count of the false news material is significantly lower than that of the authentic news information. This will have an impact on how the input text is cleaned up and vectorized. We thus believed that this may be the cause of the models ability to distinguish between authentic and fraudulent news. But much research should be done in these scenarios.
+
+## References ##
+[1] Shu, K., Sliva, A., Wang, S., Tang, J., Liu, H.: Fake news detection on social media: A data mining perspective. ACM SIGKDD explorations newsletter 19(1), 22–36 (2017)
+
+[2] Islam, F., Alam, M.M., Hossain, S.S., Motaleb, A., Yeasmin, S., Hasan, M., Rahman, R.M.: Bengali fake news detection. In: 2020 IEEE 10th International Conference on Intelligent Systems (IS), pp. 281–287 (2020). IEEE
+
+[3] Mugdha, S.B.S., Kuddus, M.B.M.M., Salsabil, L., Anika, A., Marma, P.P., Hossain, Z., Shatabda, S.: A gaussian naive bayesian classifier for fake news detection in bengali. In: Emerging Technologies in Data Mining and Information Security, pp. 283–291. Springer, ??? (2021)
+
+[4] P´erez-Rosas, V., Kleinberg, B., Lefevre, A., Mihalcea, R.: Automatic detection of fake news. arXiv preprint arXiv:1708.07104 (2017)
+
+[5] Hossain, M.Z., Rahman, M.A., Islam, M.S., Kar, S.: Banfakenews: A dataset for detecting fake news in bangla. arXiv preprint arXiv:2004.08789 (2020)
+
+[6] Hussain, M.G., Hasan, M.R., Rahman, M., Protim, J., Al Hasan, S.: Detection of bangla fake news using mnb and svm classifier. In: 2020 International Conference on Computing, Electronics & Communications Engineering (iCCECE), pp. 81–85 (2020). IEEE
+
+[7] Kaur, S., Kumar, P., Kumaraguru, P.: Automating fake news detection system using multi-level voting model. Soft Computing 24(12), 9049–9069 (2020)
+
+[8] Da Silva, N.F., Hruschka, E.R., Hruschka Jr, E.R.: Tweet sentiment analysis with classifier ensembles. Decision support systems 66, 170–179 (2014)
+
+[9] Steck, H.: Embarrassingly shallow autoencoders for sparse data. In: The World Wide Web Conference, pp. 3251–3257 (2019)
+
+[10] Sagha, H., Cummins, N., Schuller, B.: Stacked denoising autoencoders for sentiment analysis: a review. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery 7(5), 1212 (2017)
+
+[11] Liang, H., Sun, X., Sun, Y., Gao, Y.: Text feature extraction based on deep learning: a review. EURASIP journal on wireless communications and networking 2017(1), 1–12 (2017)
+
+[12] Dahlgaard, S., Knudsen, M., Thorup, M.: Practical hash functions for similarity estimation and dimensionality reduction. Advances in Neural Information Processing Systems 30 (2017)
+
+[13] Valdenegro-Toro, M., Pincheira, H.: Implementing noise with hash functions for graphics processing units. arXiv preprint arXiv:1903.12270 (2019)
+
+[14] Cheng, M., Wu, Y., Zhou, X., Li, J., Zhang, L.: Efficient web archive searching (2020)
+
+[15] Cho, K., Van Merri¨enboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk, H., Bengio, Y.: Learning phrase representations using rnn encoder-decoder for statistical machine translation. arXiv preprint arXiv:1406.1078 (2014)
+
+[16] An, J., Cho, S.: Variational autoencoder based anomaly detection using reconstruction probability. Special Lecture on IE 2(1), 1–18 (2015)
+
+[17] Liu, G., Xie, L., Chen, C.-H.: Unsupervised text feature learning via deep variational auto-encoder. Information Technology and Control 49(3), 421–437 (2020)
+
+[18] Zhang, Z., Zhai, S.: Semisupervised autoencoder for sentiment analysis. Google Patents. US Patent 11,205,103 (2021)
+
+[19] Akhtar, M.S., Sawant, P., Sen, S., Ekbal, A., Bhattacharyya, P.: Solving data sparsity for aspect based sentiment analysis using cross-linguality and multi-linguality. (2018). Association for Computational Linguistics
+
+[20] Ye, D., Li, Y., Tao, C., Xie, X., Wang, X.: Multiple feature hashing learning for large-scale remote sensing image retrieval. ISPRS International Journal of Geo-Information 6(11), 364 (2017)
+
+[21] Guibon, G., Ermakova, L., Seffih, H., Firsov, A., Le No´e-Bienvenu, G.: Multilingual fake news detection with satire. In: CICLing: International Conference on Computational Linguistics and Intelligent Text Processing (2019)
+
+[22] Seger, C.: An investigation of categorical variable encoding techniques in machine learning: binary versus one-hot and feature hashing (2018)
+
+[23] Kirasich, K., Smith, T., Sadler, B.: Random forest vs logistic regression: binary classification for heterogeneous datasets. SMU Data Science Review 1(3), 9 (2018)
+
