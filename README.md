@@ -77,23 +77,33 @@ We have evaluated the framework using 8501 data. The test data has comefrom diff
 
 [Final Discussions pdf](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Final%20Discussions.pdf)
 
-- Hashing Trick for Machine Learning Models
+**- Hashing Trick for Machine Learning Models**
 
-Performance comparison with the proposed system
+> Performance comparison with the proposed system
 
 ![h_p_ml](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/hashing_performance.png)
 
-- Hashing Trick for Deep Learning Models
+**- Hashing Trick for Deep Learning Models**
 
-Performance comparison with the proposed system
+> Performance comparison with the proposed system
 
 ![h_p_dl](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/dl_hashing_performance.png)
 
-- Hashing-Autoencoder for Machine Learning Models
+**- Hashing-Autoencoder for Machine Learning Models**
 
-Performance comparison with the proposed system
+> Performance comparison with the proposed system
 
 ![h_a_p_ml](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/hashing_autoencoder_performance.png)
+
+**- Comparsion with Base Paper**
+
+> For Machine Learning Models
+
+![b_p_ml](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/paper%20comparison%20ml.PNG)
+
+> For Deep Learning Models
+
+![b_p_dl](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/paper%20comparison%20dl.PNG)
 
 ## Limitations ##
 As the words or features can not be regenerated in the hashing trick, it is not possible to identify the features of real or fake news. But the performance is much better than the TF-IDF or One Hot Encoding. Therefore, we must make an assumption. We noticed that the length and word count of the false news material is significantly lower than that of the authentic news information. This will have an impact on how the input text is cleaned up and vectorized. We thus believed that this may be the cause of the models ability to distinguish between authentic and fraudulent news. But much research should be done in these scenarios.
@@ -144,4 +154,3 @@ As the words or features can not be regenerated in the hashing trick, it is not 
 [22] Seger, C.: An investigation of categorical variable encoding techniques in machine learning: binary versus one-hot and feature hashing (2018)
 
 [23] Kirasich, K., Smith, T., Sadler, B.: Random forest vs logistic regression: binary classification for heterogeneous datasets. SMU Data Science Review 1(3), 9 (2018)
-
