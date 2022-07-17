@@ -6,7 +6,7 @@ The Spread of fake news is a global issue. In an age where the internet is commo
 
 ```Declaration of Originality``` [^1]
 
-**[^1]: I certify that, to the best of my knowledge, my thesis does not infringe upon anyone’s copyright nor violate any proprietary rights and that any ideas, techniques, quotations, or any other material from the work of other people included in my thesis, published or otherwise, are fully acknowledged in accordance with the standard referencing practices.**   ![sign](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/signature.png)
+[^1]: I certify that, to the best of my knowledge, my thesis does not infringe upon anyone’s copyright nor violate any proprietary rights and that any ideas, techniques, quotations, or any other material from the work of other people included in my thesis, published or otherwise, are fully acknowledged in accordance with the standard referencing practices.   ![sign](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/signature.png)
 
 ## Contribution ##
 The main contribution of this work is in the `feature extraction` part of the methodology. The main contributions of this thesis/project are:
