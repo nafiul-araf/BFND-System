@@ -2,7 +2,9 @@
 ### Running the demo API on local host 
 
 `- open the git bash and type the command: git clone https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System.git`
+
 ```- unzip into the folder 'Bangla-Fake-News-Detection-System-main'```
+
 `- In command prompt and go to the folder & type: streamlit run App.py`
 
 ## Summary ##
