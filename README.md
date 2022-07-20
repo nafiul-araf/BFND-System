@@ -1,13 +1,8 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/nafiul-araf/Bangla-Fake-News-Detection-System/total)
-
 ![GitHub language count](https://img.shields.io/github/languages/count/nafiul-araf/Bangla-Fake-News-Detection-System)
-
 ![GitHub top language](https://img.shields.io/github/languages/top/nafiul-araf/Bangla-Fake-News-Detection-System?color=yellow)
-
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/nafiul-araf/Bangla-Fake-News-Detection-System)
-
 ![GitHub forks](https://img.shields.io/github/forks/nafiul-araf/Bangla-Fake-News-Detection-System?style=social)
-
 ![GitHub Repo stars](https://img.shields.io/github/stars/nafiul-araf/Bangla-Fake-News-Detection-System?style=social)
 
 # Bangla Fake News Detection System 
