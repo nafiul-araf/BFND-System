@@ -1,6 +1,5 @@
-```diff
-# @@ Bangla Fake News Detection System @@
-```
+# Bangla Fake News Detection System 
+
 ### -------------------->>>>>>Running the demo API on local host<<<<<<--------------------- ###
 
 `- open the git bash and type the command: git clone https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System.git`
