@@ -1,11 +1,21 @@
 # Bangla-Fake-News-Detection-System #
-### Running the demo API on local host 
+### Running the demo API on local host ###
 
 `- open the git bash and type the command: git clone https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System.git`
 
 ```- unzip into the folder 'Bangla-Fake-News-Detection-System-main'```
 
 `- In command prompt and go to the folder & type: streamlit run App.py`
+
+> [Demo Api 1](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo1.PNG)
+
+> [Demo Api 2](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo2.PNG)
+
+> [Demo Api 3](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo3.PNG)
+
+> [Demo Api 4](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo4.PNG)
+
+> [Demo Api 5](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo5.PNG)
 
 ## Summary ##
 The Spread of fake news is a global issue. In an age where the internet is commonly used as the primary source of information, news consumers are more likely than ever to come across and share fake news. Consumers all around the world read, watch, or listen to the news every day for updates on everything from their favorite celebrity to their favored political candidate, and they typically assume that what they discover is accurate and trustworthy. It is a very difficult and time consuming approach for detecting fake news by a human himself. A machine learning model can help people to detect fake news within a very short time. As a result, fake news detection has become a very popular topic for the researchers. In this work, two methodologies have been proposed to detect the Bangla fake news, which are hashing and hashing-autoencoder. Hashing transforms a text into a set of indexes that has a fixed size. It puts the features in a smaller dimensional space. It reduces the original high dimensional space by mapping the features to hash keys. Autoencoder is a neural network to clean up noisy or sparse data. The input vector is rebuilt by moving from a high-dimensional space to a lower-dimensional space and then back to a higher-dimensional space. The new methodologies have been compared to traditional methodologies using natural language based neural networks such as LSTM & GRU and hybrid networks CNN-LSTM & CNN-GRU. Some machine learning models also have been used such as Logistic Regression, Decision Tree & Passive Aggressive Classifier with random parameter tuning and ensemble based methods such as Voting & Boosting. The Logistic Regression, the Light Gradient Boosted Machine and the CNN-LSTM hybrid network perform better by giving the accuracy of above 90% for detecting the fake news.
