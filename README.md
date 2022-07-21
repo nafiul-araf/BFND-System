@@ -1,5 +1,5 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/nafiul-araf/Bangla-Fake-News-Detection-System)
-![GitHub code size](https://img.shields.io/github/code-size/nafiul-araf/Bangla-Fake-News-Detection-System)
+![GitHub code size](https://img.shields.io/github/languages/code-size/nafiul-araf/Bangla-Fake-News-Detection-System)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nafiul-araf/Bangla-Fake-News-Detection-System)
 ![GitHub all releases](https://img.shields.io/github/downloads/nafiul-araf/Bangla-Fake-News-Detection-System/total)
 ![GitHub language count](https://img.shields.io/github/languages/count/nafiul-araf/Bangla-Fake-News-Detection-System)
