@@ -5,7 +5,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/nafiul-araf/Bangla-Fake-News-Detection-System?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nafiul-araf/Bangla-Fake-News-Detection-System?style=social)
 
-# Bangla Fake News Detection System 
+# A Hashing and AutoEncoder based Bangla Fake News Detection System 
 
 (Upload does not yet complete)
 
