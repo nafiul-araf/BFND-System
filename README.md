@@ -139,6 +139,8 @@ We have evaluated the framework using 8501 data. The test data has comefrom diff
 ## Limitations ##
 As the words or features can not be regenerated in the hashing trick, it is not possible to identify the features of real or fake news. But the performance is much better than the TF-IDF or One Hot Encoding. Therefore, we must make an assumption. We noticed that the length and word count of the false news material is significantly lower than that of the authentic news information. This will have an impact on how the input text is cleaned up and vectorized. We thus believed that this may be the cause of the models ability to distinguish between authentic and fraudulent news. But much research should be done in these scenarios.
 
+## Future Work ##
+We have to thoroughly and repeatedly test the approaches in order to build the models. We were unable to use any further pre-existing strategies like Word2Vec, GloVe, etc. because of time constraints and hardware limitations. This methodology will thus be used to compare my recommended approaches in subsequent research. A number of embedding strategies will also be used, along with transformer models like the BERT and GPT-3. Similar gaps exist in Bangla data on fake news. If more data from diverse scattered sources can be utilized to train the models, more model improvement is possible. To determine the characteristics of authentic or fraudulent news, more study is required due to the limitations of hashing. 
 ## References ##
 [1] Shu, K., Sliva, A., Wang, S., Tang, J., Liu, H.: Fake news detection on social media: A data mining perspective. ACM SIGKDD explorations newsletter 19(1), 22–36 (2017)
 
