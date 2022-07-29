@@ -7,7 +7,7 @@
 
 # A Hashing and AutoEncoder based Bangla Fake News Detection System 
 
-(Upload does not yet complete)
+- ![App Link](https://banfakedet.herokuapp.com/)
 
 ### -------------------->>>>>>Running the demo API on local host<<<<<<--------------------- ###
 
