@@ -17,10 +17,6 @@
 
 `- In command prompt and go to the folder & type: streamlit run App.py`
 
-> [Demo Api 1](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo1.PNG)
-
-> [Demo Api 2](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo2.PNG)
-
 > [Demo Api 3](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo3.PNG)
 
 > [Demo Api 4](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo4.PNG)
