@@ -103,7 +103,7 @@ The figure shows the methodology of the Hashing-Autoencoder technique only for M
 ![cnn_gru](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/cnn_gru.drawio.png)
 
 ## Results and Discussions ##
-We have evaluated the framework using 8501 data. The test data has comefrom different distribution of the train & validation data but from same online source [5]. In addition to my proposed methodology for comparing performance, We have also evaluated the traditional feature extraction techniques TF-IDF for ML models and One Hot Encoding for DL models, respectively. After feature extracting from the test data we have used the trained models for detecting the fake news. Since the authors of this article shared the dataset with the benchmark techniques to identify Bangla fake news, we also compare the performance of our suggested methodology with the paper [5] in the final discussion.
+We have evaluated the framework using 8501 data. The test data has comefrom different distribution of the train & validation data but from same online source [5]. In addition to my proposed methodology for comparing performance, We have also evaluated the traditional feature extraction techniques TF-IDF for ML models and One Hot Encoding for DL models, respectively. After feature extracting from the test data we have used the trained models for detecting the fake news. Since the authors of this article shared the dataset with the benchmark techniques to identify Bangla fake news, we also compare the performance of our suggested methodology with the paper [5] in the final discussion.
 
 [Result Analysis pdf](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Result%20Analysis.pdf)
 
