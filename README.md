@@ -13,9 +13,9 @@
 
 `- open the git bash and type the command: git clone https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System.git`
 
-```- unzip into the folder 'Bangla-Fake-News-Detection-System-main'```
+```- unzip into the folder```
 
-`- In command prompt and go to the folder & type: streamlit run App.py`
+```- Go to the folder 'APP' and in the command prompt type: streamlit run App.py```
 
 > [Demo Api 1](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo1.PNG)
 
