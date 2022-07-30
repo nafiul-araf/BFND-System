@@ -12,7 +12,7 @@
 
 ### -------------------->>>>>>Running the demo API on local host<<<<<<--------------------- ###
 
-`- open the git bash and type the command: git clone https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System.git`
+`- open the git bash and type the command: git clone https://github.com/nafiul-araf/BFND-System.git`
 
 ```- unzip into the folder```
 
