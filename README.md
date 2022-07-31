@@ -20,11 +20,17 @@ Output -> Fake or Real with a confidence ranges from 0 to 1
 
 ### -------------------->>>>>>Running the demo API on local host<<<<<<--------------------- ###
 
-`- open the git bash and type the command: git clone https://github.com/nafiul-araf/BFND-System.git`
+```
+open the git bash and type the command: git clone https://github.com/nafiul-araf/BFND-System.git
+```
 
-```- unzip into the folder```
+``` 
+unzip into the folder
+```
 
-```- Go to the folder 'APP' and in the command prompt type: streamlit run App.py```
+```
+Go to the folder 'APP' and in the command prompt type: streamlit run App.py
+```
 
 > [Demo Api 1](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/demo1.PNG)
 
@@ -47,11 +53,16 @@ The Spread of fake news is a global issue. In an age where the internet is commo
 ## Contribution ##
 The main contribution of this work is in the `feature extraction` part of the methodology. The main contributions of this thesis/project are:
 
-`- Using the hashing trick for the feature extraction from the text corpus. In general, TF-IDF, bag of words, word embedding, etc. techniques are being used widely for feature extraction. For both ML and DL algorithms hashing is used. For the large data set, it has improved the performance of the model significantly.`
+```
+Using the hashing trick for the feature extraction from the text corpus. In general, TF-IDF, bag of words, word embedding, etc. techniques are being used widely for feature extraction. For both ML and DL algorithms hashing is used. For the large data set, it has improved the performance of the model significantly
+```
 
-`- Using the hashing-autoencoder technique for ML algorithms. With the help of a hashing trick we used an autoencoder technique for regeneration of the input for reducing the sparsity of the input vectors. It has improved the model’s performance in a more balanced way than only using the hashing trick.`
+```Using the hashing-autoencoder technique for ML algorithms. With the help of a hashing trick we used an autoencoder technique for regeneration of the input for reducing the sparsity of the input vectors. It has improved the model’s performance in a more balanced way than only using the hashing trick
+```
 
-`- Finding the best learning model for detecting the fake news from the Bangla news corpus using the proposed methods.`
+```
+Finding the best learning model for detecting the fake news from the Bangla news corpus using the proposed methods
+```
 
 ## Basic Framework Overview ##
 ![Basic Framework](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Framework-Overview.drawio.png)
@@ -89,7 +100,9 @@ The figure shows the methodology of the Hashing-Autoencoder technique only for M
 
 - After using Hashing for feature extraction, we also used an Autoencoder for reconstructing the feature vectors. It is a neural network based Encoder and Decoder basically used for removing the noise from the data, anomaly detection, reconstructing the data, dimensionality reduction etc. [16]. It is an unsupervised learning. They don’t require specific labels to train on since they don’t need them. However, because they build their own labels from the training data, they are self-supervised [17], [18]. An autoencoder consists of an encoder and a decoder. The encoder part reduces the higher dimension to the lower dimension by compressing the input in a latent dimension. The decoder then regenerates the input from the encoder’s latent dimension, which is returned to the lower dimension’s original dimension. As a result, Complex nonlinear functions can be modelled using auto-encoders. From the lower space to higher space, it removes the noise from the data.
 
-```- We used two encoder blocks and two decoder blocks. All the blocks consist of a dense layer, a batch normalization layer and leaky relu activation function. The decoder block 1 & the encoder block 2 are same, and the decoder block 1 and the encoder block 1 are same as the decoder block regenerates the data. The latent layer is also called a bottleneck layer which consist of a dense layer. The Encoder 1 block has (2 x input) number of neurons & decoder block 2 has the same neurons. The Encoder 2 block has same number as input of neurons & decoder block 1 has the same neurons. The latent layer has (input/2) number of neurons. The below figure shows the graphical representation of the autoencoder that I have used.```
+```
+We used two encoder blocks and two decoder blocks. All the blocks consist of a dense layer, a batch normalization layer and leaky relu activation function. The decoder block 1 & the encoder block 2 are same, and the decoder block 1 and the encoder block 1 are same as the decoder block regenerates the data. The latent layer is also called a bottleneck layer which consist of a dense layer. The Encoder 1 block has (2 x input) number of neurons & decoder block 2 has the same neurons. The Encoder 2 block has same number as input of neurons & decoder block 1 has the same neurons. The latent layer has (input/2) number of neurons. The below figure shows the graphical representation of the autoencoder that I have used.
+```
 
 ![Autoencode](https://github.com/nafiul-araf/Bangla-Fake-News-Detection-System/blob/main/Autoencoder.drawio.png)
 
