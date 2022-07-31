@@ -9,6 +9,11 @@
 
 > Click on the image below: The demo app is deployed on [Heroku](https://en.wikipedia.org/wiki/Heroku) using [Streamlit](https://golden.com/wiki/Streamlit-5KMKYAB)
 
+```
+Input -> A news article text
+Output -> Fake or Real with a confidence ranges from 0 to 1
+```
+
 [![Interface](https://github.com/nafiul-araf/BFND-System/blob/main/Interface.PNG)](https://banfakedet.herokuapp.com/)
 
 > Sign in/up to github account to see deployment environment hisory
