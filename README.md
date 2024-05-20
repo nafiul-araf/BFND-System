@@ -7,7 +7,7 @@
 
 # A Hashing and AutoEncoder based Bangla Fake News Detection System 
 
-> Click on the image below to visit the demo app: The demo app is deployed on [Heroku](https://en.wikipedia.org/wiki/Heroku) using [Streamlit](https://golden.com/wiki/Streamlit-5KMKYAB)
+> Click on the image below to visit the demo app (App cannot see on the link due to Heroku pricing limitation): The demo app is deployed on [Heroku](https://en.wikipedia.org/wiki/Heroku) using [Streamlit](https://golden.com/wiki/Streamlit-5KMKYAB)
 
 ```
 Input -> A news article text
