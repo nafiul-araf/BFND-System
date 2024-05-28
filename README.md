@@ -7,14 +7,14 @@
 
 # A Hashing and AutoEncoder based Bangla Fake News Detection System 
 
-> Click on the image below to visit the demo app (App cannot see on the link due to Heroku pricing limitation): The demo app is deployed on [Heroku](https://en.wikipedia.org/wiki/Heroku) using [Streamlit](https://golden.com/wiki/Streamlit-5KMKYAB)
+> Click on the image below to visit the demo app: The demo app is deployed using [Streamlit](https://golden.com/wiki/Streamlit-5KMKYAB)
 
 ```
 Input -> A news article text
 Output -> Fake or Real with a confidence ranges from 0 to 1
 ```
 
-[![Interface](https://github.com/nafiul-araf/BFND-System/blob/main/Interface.PNG)](https://banfakedet.herokuapp.com/)
+[![Interface](https://github.com/nafiul-araf/BFND-System/blob/main/Interface.PNG)](https://bfnd-system-zl5cazkv6ebob7uzfckjfg.streamlit.app/)
 
 > Sign in/up to github account to see deployment environment hisory
 
