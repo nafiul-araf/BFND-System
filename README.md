@@ -7,13 +7,13 @@
 
 # A Hashing and AutoEncoder based Bangla Fake News Detection System 
 
-> Click on the image below to visit the demo app: The demo app is deployed using [Streamlit](https://golden.com/wiki/Streamlit-5KMKYAB)
+> Click on the link below to visit the demo app: The demo app is deployed using [Streamlit](https://golden.com/wiki/Streamlit-5KMKYAB)
 
 ```
 Input -> A news article text
 Output -> Fake or Real with a confidence ranges from 0 to 1
 ```
-Link:->(https://bfnd-system-jasmyiyhn8spjxbkqtdgug.streamlit.app/)
+Link:->(https://share.streamlit.io/)
 [![Interface](https://github.com/nafiul-araf/BFND-System/blob/main/Interface.PNG)](https://sentiment-detection-bne7wkanmxucfku4wrqy5e.streamlit.app/)
 
 > Sign in/up to github account to see deployment environment hisory
