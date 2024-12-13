@@ -1,9 +1,9 @@
-import streamlit as st
+import streamlit as st 
 import altair as alt
 import pandas as pd
 import numpy as np
 import joblib
-from wordcloud import WordCloud
+import shap
 import matplotlib.pyplot as plt
 
 # Load pipeline
@@ -17,31 +17,36 @@ def get_prediction_proba(docx):
     results = pipeline.predict_proba([docx])
     return results
 
-def generate_wordcloud(text):
-    wordcloud = WordCloud(width=800, height=400, background_color="white").generate(text)
-    return wordcloud
+def get_shap_explanation(docx):
+    explainer = shap.Explainer(pipeline)
+    shap_values = explainer([docx])
+    return shap_values
+
+news_emoji_dict = {"Fake": "🛛", "Real": "✅"}
 
 def main():
     st.title("Bangla Fake News Classifier")
     st.subheader("Input Text")
-
+    
     with st.form(key='fakenews_clf_form'):
         raw_text = st.text_area("Type Here")
         submit_text = st.form_submit_button(label='Submit')
-
+    
     if submit_text:
         col1, col2 = st.columns(2)
         # Apply functions
         prediction = predict_fakenews(raw_text)
         probability = get_prediction_proba(raw_text)
-
+        shap_values = get_shap_explanation(raw_text)
+        
         with col1:
             st.success("Original Text")
             st.write(raw_text)
             st.success("Prediction")
-            st.write(f"{prediction}")
-            st.write(f"Confidence: {np.max(probability):.2f}")
-
+            news_icon = news_emoji_dict[prediction]
+            st.write(f"{prediction}: {news_icon}")
+            st.write(f"Confidence: {np.max(probability)}")
+        
         with col2:
             st.success("Prediction Probability")
             proba_df = pd.DataFrame(probability, columns=pipeline.classes_)
@@ -55,14 +60,11 @@ def main():
             )
             st.altair_chart(fig, use_container_width=True)
 
-        # Word Cloud Visualization
-        if raw_text:
-            st.subheader("Word Cloud from Your Text")
-            wordcloud = generate_wordcloud(raw_text)
-            plt.figure(figsize=(10, 5))
-            plt.imshow(wordcloud, interpolation="bilinear")
-            plt.axis("off")
-            st.pyplot(plt)
+        # Feature importance section
+        st.subheader("Feature Importance")
+        st.set_option('deprecation.showPyplotGlobalUse', False)
+        shap.plots.bar(shap_values[0], show=False)
+        st.pyplot()
 
 if __name__ == '__main__':
     main()
