@@ -16,12 +16,7 @@ from track_utils import create_page_visited_table,add_page_visited_details,view_
 
 
 
-pipeline=joblib.load(open("fake_news_classifier_pipeline.pkl","rb"))
-
-
-
-
-pipeline
+pipeline=joblib.load("fake_news_classifier_pipeline.pkl")
 
 
 
