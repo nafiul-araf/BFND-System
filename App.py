@@ -3,9 +3,6 @@ import altair as alt
 import pandas as pd
 import numpy as np
 import joblib
-import matplotlib.pyplot as plt
-!pip install shap
-import shap
 
 # Load pipeline
 pipeline = joblib.load("fake_news_classifier_pipeline.pkl")
@@ -18,12 +15,12 @@ def get_prediction_proba(docx):
     results = pipeline.predict_proba([docx])
     return results
 
-def get_shap_explanation(docx):
-    explainer = shap.Explainer(pipeline)
-    shap_values = explainer([docx])
-    return shap_values
-
-news_emoji_dict = {"Fake": "🛛", "Real": "✅"}
+def get_feature_importance():
+    if hasattr(pipeline, 'named_steps') and 'classifier' in pipeline.named_steps:
+        model = pipeline.named_steps['classifier']
+        if hasattr(model, 'feature_importances_'):
+            return model.feature_importances_
+    return None
 
 def main():
     st.title("Bangla Fake News Classifier")
@@ -38,14 +35,13 @@ def main():
         # Apply functions
         prediction = predict_fakenews(raw_text)
         probability = get_prediction_proba(raw_text)
-        shap_values = get_shap_explanation(raw_text)
+        feature_importances = get_feature_importance()
         
         with col1:
             st.success("Original Text")
             st.write(raw_text)
             st.success("Prediction")
-            news_icon = news_emoji_dict[prediction]
-            st.write(f"{prediction}: {news_icon}")
+            st.write(f"{prediction}")
             st.write(f"Confidence: {np.max(probability)}")
         
         with col2:
@@ -62,10 +58,20 @@ def main():
             st.altair_chart(fig, use_container_width=True)
 
         # Feature importance section
-        st.subheader("Feature Importance")
-        st.set_option('deprecation.showPyplotGlobalUse', False)
-        shap.plots.bar(shap_values[0], show=False)
-        st.pyplot()
+        if feature_importances is not None:
+            st.subheader("Feature Importance")
+            feature_names = pipeline.named_steps['vectorizer'].get_feature_names_out()
+            importance_df = pd.DataFrame({
+                'Feature': feature_names,
+                'Importance': feature_importances
+            }).sort_values(by='Importance', ascending=False).head(10)
+
+            fig = alt.Chart(importance_df).mark_bar().encode(
+                x=alt.X('Importance', title='Feature Importance'),
+                y=alt.Y('Feature', sort='-x', title='Top Features'),
+                color='Feature'
+            )
+            st.altair_chart(fig, use_container_width=True)
 
 if __name__ == '__main__':
     main()
