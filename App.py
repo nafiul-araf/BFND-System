@@ -3,8 +3,9 @@ import altair as alt
 import pandas as pd
 import numpy as np
 import joblib
-import shap
 import matplotlib.pyplot as plt
+!pip install shap
+import shap
 
 # Load pipeline
 pipeline = joblib.load("fake_news_classifier_pipeline.pkl")
