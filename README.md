@@ -14,7 +14,7 @@ Input -> A news article text
 Output -> Fake or Real with a confidence ranges from 0 to 1
 ```
 
-Link:-> 👇
+**Link:->** **👇**
 [![Interface](https://github.com/nafiul-araf/BFND-System/blob/main/Interface.PNG)](https://bfnd-system-3ah3m5kckw6q3fuzc3vdh2.streamlit.app/)
 
 > Sign in/up to github account to see deployment environment hisory
