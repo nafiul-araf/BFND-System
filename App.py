@@ -3,8 +3,6 @@ import altair as alt
 import pandas as pd
 import numpy as np
 import joblib
-import shap
-import matplotlib.pyplot as plt
 
 # Load pipeline
 pipeline = joblib.load("fake_news_classifier_pipeline.pkl")
@@ -17,12 +15,7 @@ def get_prediction_proba(docx):
     results = pipeline.predict_proba([docx])
     return results
 
-def get_shap_explanation(docx):
-    explainer = shap.Explainer(pipeline)
-    shap_values = explainer([docx])
-    return shap_values
-
-news_emoji_dict = {"Fake": "🛛", "Real": "✅"}
+news_emoji_dict = {"Fake": "🚫", "Real": "✅"}
 
 def main():
     st.title("Bangla Fake News Classifier")
@@ -37,7 +30,6 @@ def main():
         # Apply functions
         prediction = predict_fakenews(raw_text)
         probability = get_prediction_proba(raw_text)
-        shap_values = get_shap_explanation(raw_text)
         
         with col1:
             st.success("Original Text")
@@ -59,12 +51,6 @@ def main():
                 color='news type'
             )
             st.altair_chart(fig, use_container_width=True)
-
-        # Feature importance section
-        st.subheader("Feature Importance")
-        st.set_option('deprecation.showPyplotGlobalUse', False)
-        shap.plots.bar(shap_values[0], show=False)
-        st.pyplot()
 
 if __name__ == '__main__':
     main()
